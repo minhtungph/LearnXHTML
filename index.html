@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Web page with HTML5">
+        <meta name="keywords" content="HTML, CSS, Khóa Học lập trình web Fullstack">
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>Excel toàn tập</title>
+        <script>
+            function ClickDoiTuong(DoiTuong){
+                var _bien=document.getElementById("tieude");
+                var value=DoiTuong.getAttribute("")
+                <!--
+                    Có thể dùng cách khác trong đoan lấy value này
+                    
+                    -->
+                alert(_bien.innerHTML + " : " + _bien.dataset.value)
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1 id="tieude"  onclick="ClickDoiTuong(this)"data-key="bien" data-value="giá trị của biến">Lập trình vba trong Excel</h1>
+        </header>
+
+    </body>
+</html>
